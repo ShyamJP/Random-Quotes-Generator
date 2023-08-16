@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #C0C0C0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  /* it is take content at center */
+}
+
+.wrapper{
+    background-color: white;
+    padding: 30px 30px 25px;
+    border-radius: 8px;
+    width: 600px;
+}
+
+.wrapper header{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.quote-area{
+    display: flex;
+    justify-content: center;
+}
+.quote-area .quote{
+        text-align: center;
+        font-size: 25px;
+        word-break: break-all;
+}
+.quote-area i:first-child{
+    margin: 3px 10px 0 0;
+}
+.quote-area i:last-child{
+    display: flex;
+    align-items: flex-end; 
+    margin:0 0 3px 10px ;
+}
+button.loading{
+    opacity: .7;
+    pointer-events: none;
+}
+.author{
+    display: flex;
+    margin-top: 20px;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-style: italic;
+}
+ul li{
+    list-style-type: none;
+}
+.wrapper .buttons{
+    border-top:  2px solid #ccc;
+}
+.buttons .features{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;  
+    cursor: pointer;
+}
+.buttons .features ul li:hover{
+    color: white;
+    background-color: rgb(82, 99, 233);
+    transition: 0.8s;
+}
+.features ul{
+ display: flex;
+}
+.features ul li{
+    list-style-type: none;
+    margin: 0 5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(82, 99, 233);
+    border: 2px solid rgb(82, 99, 233);
+}
+.features button{
+    border: none;
+    outline: none;
+    color: rgb(82, 99, 233);
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.features button:hover{
+    background-color: rgb(82, 99, 233);
+    color: white;
+    transition: 0.8s;
+}
